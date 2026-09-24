@@ -1,0 +1,22 @@
+{
+  "id": "torsvik-cocks-2017",
+  "name": "Torsvik et al. (2012)",
+  "citation": "Torsvik, T.H., et al. (2012), Phanerozoic polar wander, palaeogeography and dynamics, Earth-Science Reviews, 114, 325-368",
+  "n_poles": 536,
+  "age_min": 0.5,
+  "age_max": 550.0,
+  "exported_for": {
+    "torsvikcocks2017": {
+      "points": "reconstructions/torsvikcocks2017/paleomag/torsvik-cocks-2017/points.json",
+      "path": "reconstructions/torsvikcocks2017/paleomag/torsvik-cocks-2017/gapwap_path.json"
+    },
+    "scotese": {
+      "points": "reconstructions/scotese/paleomag/torsvik-cocks-2017/points.json",
+      "path": "reconstructions/scotese/paleomag/torsvik-cocks-2017/gapwap_path.json"
+    },
+    "merdith2021": {
+      "points": "reconstructions/merdith2021/paleomag/torsvik-cocks-2017/points.json",
+      "path": "reconstructions/merdith2021/paleomag/torsvik-cocks-2017/gapwap_path.json"
+    }
+  }
+}

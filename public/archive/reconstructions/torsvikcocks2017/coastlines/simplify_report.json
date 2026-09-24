@@ -1,0 +1,20 @@
+{
+  "tol_deg": 0.05,
+  "vertices_before": 301020,
+  "vertices_after": 75291,
+  "arcs": 4680,
+  "shared_arcs": 1624,
+  "size_frac": 0.05,
+  "arcs_capped_by_size": 3227,
+  "arcs_tightened": 302,
+  "arcs_reverted": 49,
+  "iterations": 8,
+  "snap": {
+    "moved": 106,
+    "clusters_skipped": 175,
+    "max_move_m": 9.599638448881747
+  },
+  "clearance_m": 2.0,
+  "source_violating_pairs": 66416,
+  "pinned_vertices": 2362
+}

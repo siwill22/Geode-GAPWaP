@@ -1,0 +1,23 @@
+{
+  "recipeVersion": 1,
+  "site": {
+    "repoName": "Geode-GAPWaP",
+    "title": "Paleomagnetic Poles",
+    "description": "Torsvik et al. (2012) virtual geomagnetic poles, their sample sites and the modelled GAPWaP, on the Torsvik & Cocks 2017, Scotese and Merdith 2021 Reconstruction Models."
+  },
+  "wrapperType": "reconstruction-group-globe",
+  "reconstructionIds": [
+    "torsvikcocks2017",
+    "scotese",
+    "merdith2021"
+  ],
+  "anchorPlates": {
+    "torsvikcocks2017": 1
+  },
+  "multiGlobe": {
+    "syncAge": false
+  },
+  "dataHost": {
+    "archiveBase": "https://siwill22.github.io/Geode-GAPWaP/archive"
+  }
+}

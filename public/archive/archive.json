@@ -1,0 +1,62 @@
+{
+  "models": [],
+  "reconstruction_models": [
+    {
+      "id": "merdith2021",
+      "name": "Merdith et al. 2021",
+      "source": "Merdith, A.S., Williams, S.E., Collins, A.S., et al. (2021), Extending full-plate tectonic models into deep time: Linking the Neoproterozoic and the Phanerozoic, Earth-Science Reviews",
+      "path": "reconstructions/merdith2021/manifest.json",
+      "has_boundaries": true,
+      "has_static_polygons": true,
+      "has_plate_names": true,
+      "has_paleolithology": false,
+      "has_oldmap": false
+    },
+    {
+      "id": "scotese",
+      "name": "Scotese 2008",
+      "source": "Scotese, C.R. (2008), rotation model, via Cao, W., Zahirovic, S., Flament, N., et al. (2018) supplementary data (Cao2018_SM)",
+      "path": "reconstructions/scotese/manifest.json",
+      "has_boundaries": false,
+      "has_static_polygons": true,
+      "has_plate_names": false,
+      "has_paleolithology": true,
+      "has_oldmap": false
+    },
+    {
+      "id": "torsvikcocks2017",
+      "name": "Torsvik & Cocks (2017)",
+      "source": "Torsvik, T.H. & Cocks, L.R.M. (2017), Earth History and Palaeogeography, Cambridge University Press",
+      "path": "reconstructions/torsvikcocks2017/manifest.json",
+      "has_boundaries": false,
+      "has_static_polygons": true,
+      "has_plate_names": true,
+      "has_paleolithology": false,
+      "has_oldmap": false
+    }
+  ],
+  "paleomag_pole_sets": [
+    {
+      "id": "torsvik-cocks-2017",
+      "name": "Torsvik et al. (2012)",
+      "citation": "Torsvik, T.H., et al. (2012), Phanerozoic polar wander, palaeogeography and dynamics, Earth-Science Reviews, 114, 325-368",
+      "n_poles": 536,
+      "age_min": 0.5,
+      "age_max": 550,
+      "reconstruction_models": {
+        "torsvikcocks2017": {
+          "points": "reconstructions/torsvikcocks2017/paleomag/torsvik-cocks-2017/points.json",
+          "path": "reconstructions/torsvikcocks2017/paleomag/torsvik-cocks-2017/gapwap_path.json"
+        },
+        "scotese": {
+          "points": "reconstructions/scotese/paleomag/torsvik-cocks-2017/points.json",
+          "path": "reconstructions/scotese/paleomag/torsvik-cocks-2017/gapwap_path.json"
+        },
+        "merdith2021": {
+          "points": "reconstructions/merdith2021/paleomag/torsvik-cocks-2017/points.json",
+          "path": "reconstructions/merdith2021/paleomag/torsvik-cocks-2017/gapwap_path.json"
+        }
+      }
+    }
+  ]
+}
