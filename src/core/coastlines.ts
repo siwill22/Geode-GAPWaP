@@ -458,13 +458,12 @@ export class Coastlines {
     /** Defaults match every existing caller (land just clear of R_SURFACE,
      *  drawn OVER the data sphere -- the mantle/climate viewers' "land fill
      *  substitutes for missing data" use). A caller that wants land as a
-     *  backdrop UNDER a data sphere instead (e.g. the deformation viewer's
-     *  grey continents, see docs/plans/deformation-viewer.md) passes
-     *  LAND_R_UNDER_SURFACE and a plain grey landColor. */
+     *  backdrop UNDER a data sphere instead (e.g. plain grey continents)
+     *  passes LAND_R_UNDER_SURFACE and a plain grey landColor. */
     private readonly landRadius: number = LAND_R,
     /** Initial land fill. Usually superseded immediately by applyTheme(); a
-     *  caller that wants land OUTSIDE the Theme system (the deformation
-     *  viewer's plain grey continents) passes one and never calls
+     *  caller that wants land OUTSIDE the Theme system (e.g. plain grey
+     *  continents) passes one and never calls
      *  applyTheme. */
     private readonly landColor: number = 0x808080,
   ) {
@@ -1380,7 +1379,7 @@ export interface CoastlineData {
 /**
  * Which coastline set belongs on this Model's globe, generalized from the
  * four hand-written versions of this same decision that predate it
- * (tomography/main.ts, climate/main.ts, valdes/main.ts, deformation/main.ts).
+ * (tomography/main.ts, climate/main.ts, valdes/main.ts, and one more).
  *
  * 1. A Manifest with its own `reconstruction_model` (ADR-0004) is looked up
  *    in `archive.native_coastlines` -- never guessed from the model's id or

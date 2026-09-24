@@ -147,8 +147,8 @@ export interface Manifest {
    *  its id/name. */
   reconstruction_model?: string;
   /** Which role this Model plays within its own reconstruction's family
-   *  (e.g. "Deformation" vs "Age & Heat Flux") -- a declared catalog fact
-   *  (see prep_deformation.py), never inferred from the model id. Lets a
+   *  (e.g. two differently-derived fields from one plate model) -- a
+   *  declared catalog fact, never inferred from the model id. Lets a
    *  generator recipe group several Models into one comparison viewer
    *  (see generator/recipeTypes.ts) purely from archive.json, without any
    *  id-naming convention. Absent for a Model with no such family concept. */

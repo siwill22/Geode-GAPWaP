@@ -73,8 +73,8 @@ export async function fetchStaticPolygonData(
 
 /**
  * Which Reconstruction Model id a climate-family Manifest's static polygons
- * come from -- docs/adr/0026's accepted debt: unlike e.g.
- * muller2019-deformation (docs/adr/0004), climate-family manifests carry no
+ * come from -- docs/adr/0026's accepted debt: unlike some
+ * other model families (docs/adr/0004), climate-family manifests carry no
  * explicit `reconstruction_model` field of their own, so this mirrors
  * core/coastlines.ts's resolveCoastlineSet() type-based switch instead of a
  * real declared lookup. Tracked as a comment on GitHub issue #5 -- once
